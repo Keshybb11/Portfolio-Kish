@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.body-1 {
+  /* background-color: black; */
+  background-image: url("assets/images/new-one.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: center;
+  overflow-x: hidden;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem 5% 1rem 1rem;
+  background-color: transparent; 
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo img {
+  height: 120px;
+  width:auto;
+  object-fit: contain;
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin-top: -50px;
+}
+
+.nav-links li a {
+  color: white;
+  
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links li a:hover{
+  color: tomato;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 5rem 5%;
+  /* background: linear-gradient(to right, #000000, #111111); */
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text .role {
+  font-size: 1.2rem;
+  color: #ccc
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  margin: 1rem 0;
+  color: white;
+}
+.hero-text p {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+
+
+.highlight {
+  color: #ff4c4c;
+}
+
+.hero-img img {
+  width: 500px;
+  height: auto;
+  margin-top: 69px;
+  max-width: 100%;
+  border-radius: 15px;
+
+}
+
+/* ------------style---------------------------------------- */
+
+.fade-in {
+  opacity: -3;
+  transform: translateX(0PX);
+  animation: fadeInUp 1.5s ease-in forwards;
+  animation-delay: 5;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 3;
+    transform: translateX(20PX);
+  }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-text, .hero-img {
+    max-width:100%;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 5%;
+    display: none;
+  }
+}
+
+
+.about-section {
+  background-color: #0a0a0a;
+  color: #FFF;
+  padding: 5rem 5%;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 0 auto;
+  max-width:1200px;
+  gap: 3rem;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 320px;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 10px 10px rgba(255, 76, 76, 0.2);
+}
+#image-space {
+  margin-bottom: 2rem;
+}
+
+.about-right-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.color-code {
+  color: #cf1020;
+  margin-bottom: 1rem;
+}
+
+.about-text p,
+.about-subsection p,
+.about-subsection ul li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ddd;
+  margin-bottom: 3rem;
+}
+
+.about-subsection{
+  font-size: 1rem;
+  line-height: 1.2;
+}
+.about-subsection ul{
+  list-style:none;
+  padding-left: 0;
+}
+
+.about-subsection ul li{
+  margin-bottom:0.6rem;
+}
+
+.value {
+  margin-top: -1rem;
+}
+
+.Beyond {
+  margin-top: -3rem;
+  margin-left: -1.6rem;
+}
+.about-section .Beyond p {
+  line-height: 1.9;
+}
+
+@media screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    margin-bottom: 2rem;
+  }
+
+  .about-right-column {
+    text-align: center;
+  }
+}
+
+.about-text-block {
+  position: relative;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Red underline animation */
+.about-text-block::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 1.2rem;
+  height: 3px;
+  width: 0;
+  background: #ff4c4c;
+  transition: width 0.4s ease;
+  border-radius: 2px;
+}
+
+/* Trigger on hover */
+.about-text-block:hover::after {
+  width: 100%;
+}
+
+.about-text-block:hover::after {
+  width: 100%;
+  box-shadow: 0 0 8px rgba(167, 41, 176, 0.933);
+}
+
+
+/* ---------------- */
+.heroic {
+  animation: softGlow 10s ease-in-out infinite alternate;
+}
+
+@keyframes softGlow {
+  0% {
+    box-shadow: 0 0 0 rgba(216, 54, 54, 0.703);
+  }
+  100% {
+    box-shadow: 0 0 40px rgba(255, 76, 76, 0.08);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
