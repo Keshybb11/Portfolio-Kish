@@ -377,7 +377,7 @@
 
 /* Projects Section Container */
 .projects-section {
-  background: black;
+  background: url("assets/images/new-one.jpg");
   padding: 5rem 5%;
   color: white;
   /* text-align: center; */
@@ -492,7 +492,111 @@
 
 
 
+/* ALL THE WRITING CSS */
+.writing-section {
+  background: url("assets/images/new-one.jpg");
+  color: #f5f5f5;
+  padding: 5rem 5%;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
+}
+
+.writing-intro {
+  max-width: 900px;
+  margin: 0 auto 0 auto;
+}
+
+.section-title {
+  font-size: 2.7rem;
+  color: goldenrod;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #ccc;
+  margin-top: 0.7rem;
+}
+
+.writing-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.writing-quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #ffdddd;
+  border-left: 4px solid #ff4c4c;
+  padding-left: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.writing-card {
+  background: #111;
+  padding: 2rem;
+  border-radius: 15px;
+  border-left: 4px solid goldenrod;
+  box-shadow: 0 10 10px rgba(101, 26, 26, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.4s ease;
+  flex: 1 1 320px;       /* Responsive size */
+  max-width: 350px;  
+}
+
+.writing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(255, 204, 0, 0.15);
+}
+
+.writing-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: goldenrod;
+}
+
+.writing-excerpt {
+  font-size: 1rem;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.writing-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #ff4c4c;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+.writing-link:hover {
+  color: maroon;
+}
+
+.in-progress-section {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.in-progress-title {
+  color: #ff4c4c;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.writing-card.in-progress {
+  border-left: 4px dashed #ff4c4c;
+  background: #161616;
+  opacity: 0.85;
+}
 
 
 
