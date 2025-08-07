@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Psychology-Inspired Software Engineer</title>
   <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-TKykKZx35n5BdJpU6VAp6QJhGpHh37k5J0Dtylq1T4v5j+T9zDkSsrCVroC27MIzT8zwBSC4e7nYY8RyREt5g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
 </head>
 <body>
   <section class="body-1">
@@ -185,18 +191,66 @@
       </div>
     </div>
 
+  </section>
 
 
+    <!-- THIS IS CONTACT SECTION -->
+  <section class="contact-section" id="contact">
+    <div class="contact-container">
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="section-subtitle">You’ve made it this far — now let’s create something meaningful together.</p>
 
 
+      <!--  Toast message container -->
+      <div class="toast success">✅ Message sent successfully!</div>
+      <div class="toast error">❌ Please fill out all fields correctly.</div>
+
+      <!--  Contact Form -->
+      <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="mesage" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <!--  Contact Icons -->
+      <div class="contact-socials">
+        <p class="p-space">Find me here:</p>
+
+        <a href="#" class="social-icon">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+
+        <a href="https://www.linkedin.com/in/kish-bosomtwe/" class="social-icon">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+
+        <a class="social-icon" href="#" >
+          <ion-icon name="mail-outline"></ion-icon>
+        </a>
 
 
-   </section>
+      </div>
 
 
+        <!-- <a href="https://instagram.com/oswell_atl/" target="_blank" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/kish-bosomtwe/" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="mailto:youremail@example.com" class="social-icon">
+          <i class="fas fa-envelope"></i>
+        </a> -->
+      
+    
+  </section>
 
 
-
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
 </html>

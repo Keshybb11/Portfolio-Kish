@@ -289,106 +289,6 @@ nav ul li a:hover::after{
 }
 
 
-/* This is for the project section; */
-
-/* .projects-section {
-  background: black;
-  padding: 5rem 5%;
-  color: white;
-  text-align: center;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  z-index: 1;
-}
-
-.project-intro {
-  max-width: 1000px;
-  margin: 0 auto 2rem auto;
-  text-align: center;
-}
-
-
-.section-title {
-  font-size: 2.7rem;
-  color: goldenrod;
-  margin-bottom: 0.5rem;
-  margin-top: -3rem;
-}
-
-.section-subtitle {
-  font-size: 1.2rem;
-  color: #ccc;
-  margin-bottom: 3rem;
-  font-style: italic;
-}
-
-.project-grid-wrapper {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-
-.project-grid{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
-  justify-items: center;
-}
-
-.project-card {
-  background: #111;
-  max-width: 320px;
-  width: 100%;
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(255, 76, 76, 0.05);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  border-top: 4px solid var(--project-color, #ff4c4c);
-}
-
-.project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 25px rgba(255, 76, 76, 0.15);
-}
-
-.project-header h3 {
-  color: var(--project-color);
-  font-size: 1.5rem;
-  margin-bottom: 0.7rem;
-}
-
-.project-header .tag {
-  font-size: 0.9rem;
-  color: #aaa;
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 3px 10px;
-  border-radius: 30px;
-  display: inline-block;
-  margin-bottom: 1rem;
-}
-
-.project-desc {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #ddd;
-}
-
-.project-link {
-  display: inline-block;
-  margin-top: 1.2rem;
-  color: goldenrod;
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.project-link:hover {
-  color: #ff4c4c;
-} */
-
 
 /* Projects Section Container */
 .projects-section {
@@ -613,8 +513,107 @@ nav ul li a:hover::after{
   opacity: 0.85;
 }
 
+/* EVERYTHONG HERE - CONTACT */
 
+.contact-section {
+  background: #0a0a0a;
+  color: #FFF;
+  padding: 5rem 5%;
+  text-align: center;
+}
 
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.toast {
+  display: none;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.toast.success {
+  background: #1e1e1e;
+  border-left: 5px solid #66ff66;
+  color: #aaffaa;
+}
+
+.toast.error {
+  background: #1e1e1e;
+  border-left: 5px solid #ff4c4c;
+  color: #ffaaaa;
+}
+
+/* Form Styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 1em;
+  background-color: #111;
+  border: 1px solid #444;
+  color: #fff;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+/* .contact-form input:invalid,
+.contact-form textarea:invalid {
+  border-color: #ff4c4c;
+} */
+
+/* .contact-form input:valid,
+.contact-form textarea:valid {
+  border-color: rgba(23, 20, 193, 0.236);
+} */
+
+.contact-form button {
+  padding: 1rem;
+  background: grey;
+  color: #0a0a0a;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #892e2e;
+  color:#fff;
+}
+
+.contact-socials {
+  margin-top: 3rem;
+  font-size: 1.3rem;
+  color: #ccc;
+}
+
+.social-icon {
+  font-size: 2rem;
+  color: #ff4c4c;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+}
+
+.p-space {
+  border: 2px inset green;
+  margin-bottom: 1rem;
+}
+
+.social-icon:hover {
+  color: goldenrod;
+}
 
 
 
