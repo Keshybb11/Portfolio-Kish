@@ -7,7 +7,7 @@
 
 .body-1 {
   /* background-color: black; */
-  background-image: url("assets/images/new-one.jpg");
+  background-image: url("assets/images/focus\ on\ comp\ -\ style\ neww.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -41,17 +41,34 @@
   margin-top: -50px;
 }
 
-.nav-links li a {
+nav ul li a {
   color: white;
   
   text-decoration: none;
   font-weight: 500;
+  font-size: 1.2rem;
+  position: relative;
 }
 
-.nav-links li a:hover{
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #73d825;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+/* .nav-links li a:hover{
   color: tomato;
   cursor: pointer;
-}
+} */
 
 .hero {
   display: flex;
@@ -88,14 +105,12 @@
   color: #ff4c4c;
 }
 
-.hero-img img {
+/* /* .hero-img img {
   width: 500px;
   height: auto;
   margin-top: 69px;
   max-width: 100%;
-  border-radius: 15px;
-
-}
+  border-radius: 15px; */
 
 /* ------------style---------------------------------------- */
 
