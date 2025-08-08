@@ -27,6 +27,8 @@
   z-index: 10;
 }
 
+
+
 .logo img {
   height: 120px;
   width:auto;
@@ -601,7 +603,7 @@ nav ul li a:hover::after{
 
 .social-icon {
   font-size: 2rem;
-  color: #ff4c4c;
+  color: rgb(217, 126, 126);
   margin: 0 1rem;
   transition: color 0.3s ease;
 }
@@ -617,6 +619,108 @@ nav ul li a:hover::after{
 
 
 
+/* Hide checkbox by default */
+.nav-toggle {
+  display: none;
+}
+
+/* Hamburger icon */
+.nav-toggle-label {
+  display: none;
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* Hamburger bars */
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  display: block;
+  background: white;
+  height: 3px;
+  width: 100%;
+  border-radius: 2px;
+  position: absolute;
+  transition: 0.3s ease;
+}
+
+.nav-toggle-label span {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-toggle-label span::before {
+  top: -8px;
+}
+
+.nav-toggle-label span::after {
+  top: 8px;
+}
+
+/* Turn into "X" when checked */
+.nav-toggle:checked + .nav-toggle-label span {
+  background: transparent;
+}
+.nav-toggle:checked + .nav-toggle-label span::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+.nav-toggle:checked + .nav-toggle-label span::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+/* Show hamburger on mobile */
+@media screen and (max-width: 768px) {
+  .nav-toggle-label {
+    display: block;
+  }
+
+  .nav-links {
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.95);
+  width: 85%;
+  max-width: 300px;
+  position: absolute;
+  top: 100%;
+  right: 1.5rem;
+  display: flex;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+  transition: all 0.4s ease;
+  z-index: 1000;
+}
+
+/* When toggle is checked, animate it into view */
+.nav-toggle:checked ~ .nav-bar .nav-links {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+  /* Show nav links when checkbox is checked */
+  .nav-toggle:checked ~ .nav-bar .nav-links {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin-bottom: 1rem;
+  }
+
+  .nav-links a {
+    font-size: 1.3rem;
+  }
+}
 
 
 
